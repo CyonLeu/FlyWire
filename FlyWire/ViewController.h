@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FWViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : FWViewController
 
+- (void)testCrash;
 
 @end
 

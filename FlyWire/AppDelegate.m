@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "FWConstants.h"
+#import "MobClick.h"
+#import "FWNavigationController.h"
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +21,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //data
+    [MobClick startWithAppkey:kUMAPPKey reportPolicy:REALTIME channelId:@"APPStrore"];
+    NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    [MobClick setAppVersion:version];
+    [MobClick setLogEnabled:YES];
+    
+    [Crashlytics startWithAPIKey:@"cc7901eb024f843ca3ac13e4cfcfe02665d929fe"];
+    
+//    Class cls = NSClassFromString(@"UMANUtil");
+//    SEL deviceIDSelector = @selector(openUDIDString);
+//    NSString *deviceID = nil;
+//    if(cls && [cls respondsToSelector:deviceIDSelector]){
+//        deviceID = [cls performSelector:deviceIDSelector];
+//    }
+//    NSLog(@"{\"oid\": \"%@\"}", deviceID);
+    
+    UIViewController *viewController = [[UIStoryboard storyboardWithName:kMainSBID bundle:nil] instantiateViewControllerWithIdentifier:kRootVCID];
+    FWNavigationController *navigationController = [[FWNavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
+    
+    
+    
+    
     return YES;
 }
 

@@ -1,0 +1,13 @@
+PODS:
+  - EGOTableViewPullRefreshAndLoadMore (1.0.4)
+  - UMengAnalytics (3.1.8)
+
+DEPENDENCIES:
+  - EGOTableViewPullRefreshAndLoadMore (~> 1.0.1)
+  - UMengAnalytics
+
+SPEC CHECKSUMS:
+  EGOTableViewPullRefreshAndLoadMore: 1dcd0f78d7aa8dee28adf64891b627904be8cd71
+  UMengAnalytics: c263b4e0f27e91551b7e79eacdf812f1bae0e256
+
+COCOAPODS: 0.34.4
