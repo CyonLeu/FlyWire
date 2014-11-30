@@ -1,0 +1,7 @@
+#filter file 
+*.xcworkspace
+
+
+#filter dir
+Pods
+
