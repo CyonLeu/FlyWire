@@ -14,20 +14,9 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-CS-ocI">
-                                <rect key="frame" x="200" y="62" width="66" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Photos">
-                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="RC7-T4-1Vk" kind="show" id="JgR-wb-7xv"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxN-Fh-jk4">
                                 <rect key="frame" x="210" y="157" width="41" height="30"/>
                                 <state key="normal" title="Crash">
@@ -43,31 +32,176 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-CS-ocI">
+                                <rect key="frame" x="200" y="62" width="66" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Photos">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RC7-T4-1Vk" kind="show" id="NDs-WI-asw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="387" y="191"/>
+            <point key="canvasLocation" x="-301" y="-28"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos View Controller-->
         <scene sceneID="HVS-rh-Cnj">
             <objects>
-                <viewController id="RC7-T4-1Vk" sceneMemberID="viewController">
+                <viewController id="RC7-T4-1Vk" customClass="FWPhotosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hPs-hU-1eT"/>
                         <viewControllerLayoutGuide type="bottom" id="Q2U-dV-bL3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jyL-Sz-fOh">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0j-BI-XKx">
+                                <rect key="frame" x="39" y="63" width="42" height="30"/>
+                                <state key="normal" title="相册">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShowPhotosButton:" destination="RC7-T4-1Vk" eventType="touchUpInside" id="I3x-EX-ot6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeQ-to-8Sz">
+                                <rect key="frame" x="39" y="33" width="42" height="30"/>
+                                <state key="normal" title="相机">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTakePhotoButton:forEvent:" destination="RC7-T4-1Vk" eventType="touchUpInside" id="Wi3-4A-8In"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TdJ-Pl-V9L">
+                                <rect key="frame" x="16" y="139" width="288" height="363"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="系统" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwd-uz-jQJ">
+                                <rect key="frame" x="39" y="10" width="34" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自定义" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivi-Wk-xP8">
+                                <rect key="frame" x="120" y="10" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMs-Ac-mS9">
+                                <rect key="frame" x="122" y="33" width="30" height="30"/>
+                                <state key="normal" title="拍照">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAVTakePhotoButton:" destination="RC7-T4-1Vk" eventType="touchUpInside" id="MJX-2K-J0T"/>
+                                    <segue destination="GkY-ss-h07" kind="presentation" identifier="presentAVCapture" modalTransitionStyle="coverVertical" id="GcJ-Xf-tUB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbV-8u-rxC">
+                                <rect key="frame" x="122" y="63" width="30" height="30"/>
+                                <state key="normal" title="图库">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAVPhotosButton:" destination="RC7-T4-1Vk" eventType="touchUpInside" id="jL5-TV-6fm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="TdJ-Pl-V9L" id="Kgn-3B-zHB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GP4-Hq-bqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="-495"/>
+            <point key="canvasLocation" x="287" y="-455"/>
+        </scene>
+        <!--Capture View Controller-->
+        <scene sceneID="hmU-XF-5e6">
+            <objects>
+                <viewController id="GkY-ss-h07" customClass="FWAVCaptureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uhp-qb-40c"/>
+                        <viewControllerLayoutGuide type="bottom" id="igB-1n-jzO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s0r-tH-37y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-ry-vIx" userLabel="overlayView" customClass="FWCircleCenterClearView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nul-GB-Sm8">
+                                        <rect key="frame" x="266" y="8" width="54" height="30"/>
+                                        <state key="normal" title="Change">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onChangeCameraButton:" destination="GkY-ss-h07" eventType="touchUpInside" id="aH0-W7-BlY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbk-LE-8y2">
+                                        <rect key="frame" x="8" y="8" width="48" height="30"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCancelButton:" destination="GkY-ss-h07" eventType="touchUpInside" id="KLh-Ki-1Eo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV5-7l-36L">
+                                        <rect key="frame" x="124" y="503" width="73" height="30"/>
+                                        <state key="normal" title="TakePhoto">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onTakePhotoButton:" destination="GkY-ss-h07" eventType="touchUpInside" id="duY-SM-SlP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pz-Cs-a1u">
+                                        <rect key="frame" x="8" y="481" width="81" height="73"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPhotosLibButton:" destination="GkY-ss-h07" eventType="touchUpInside" id="bdT-Oj-wfj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DPt-ry-vIx" firstAttribute="height" secondItem="s0r-tH-37y" secondAttribute="height" id="Okb-J5-21J"/>
+                            <constraint firstItem="DPt-ry-vIx" firstAttribute="width" secondItem="s0r-tH-37y" secondAttribute="width" id="U7T-fh-f7o"/>
+                            <constraint firstAttribute="centerX" secondItem="DPt-ry-vIx" secondAttribute="centerX" id="goI-Bf-LYz"/>
+                            <constraint firstAttribute="centerY" secondItem="DPt-ry-vIx" secondAttribute="centerY" id="pnO-Ms-LW2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="changeCameraButton" destination="nul-GB-Sm8" id="fYO-vM-nTw"/>
+                        <outlet property="overlayView" destination="DPt-ry-vIx" id="vSH-w6-fNg"/>
+                        <outlet property="photoLibButton" destination="9pz-Cs-a1u" id="iM7-Sp-f7e"/>
+                        <outlet property="takePhotoButton" destination="jV5-7l-36L" id="L1b-xU-ZGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcR-7X-s1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="-455"/>
         </scene>
     </scenes>
 </document>

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C8DF002E876FE6741CCC06B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D0B3959DCE6434DA319CEA /* libPods.a */; };
+		E6083E9D1A2B52DE000EF36A /* baidu_pcs_ios-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6083E961A2B52DE000EF36A /* baidu_pcs_ios-1.0.a */; };
+		E6D83F991A2D58D700E93FE7 /* FWImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D83F981A2D58D700E93FE7 /* FWImagePickerViewController.m */; };
+		E6D83F9C1A2DB06500E93FE7 /* FWPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D83F9B1A2DB06500E93FE7 /* FWPhotosViewController.m */; };
 		E6DE56DB1A2864D4004502A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DE56DA1A2864D4004502A6 /* main.m */; };
 		E6DE56DE1A2864D4004502A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DE56DD1A2864D4004502A6 /* AppDelegate.m */; };
 		E6DE56E11A2864D4004502A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DE56E01A2864D4004502A6 /* ViewController.m */; };
@@ -20,6 +23,9 @@
 		E6DE570A1A287749004502A6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE57091A287749004502A6 /* libz.dylib */; };
 		E6DE570D1A287A5F004502A6 /* FWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DE570C1A287A5F004502A6 /* FWNavigationController.m */; };
 		E6DE57101A288C43004502A6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DE570F1A288C43004502A6 /* Crashlytics.framework */; };
+		E6F0D1E71A2DB4FA00625C12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F0D1E61A2DB4FA00625C12 /* AVFoundation.framework */; };
+		E6F0D1EA1A2DE44000625C12 /* FWAVCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F0D1E91A2DE44000625C12 /* FWAVCaptureViewController.m */; };
+		E6F0D1ED1A2DE8CE00625C12 /* FWCircleCenterClearView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F0D1EC1A2DE8CE00625C12 /* FWCircleCenterClearView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,16 @@
 		58D0B3959DCE6434DA319CEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC2178AF79021C6F964F747 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C0A720BD839B397189160A31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E6083E961A2B52DE000EF36A /* baidu_pcs_ios-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "baidu_pcs_ios-1.0.a"; sourceTree = "<group>"; };
+		E6083E981A2B52DE000EF36A /* BaiduOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduOAuth.h; sourceTree = "<group>"; };
+		E6083E991A2B52DE000EF36A /* BaiduPCSActionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduPCSActionInfo.h; sourceTree = "<group>"; };
+		E6083E9A1A2B52DE000EF36A /* BaiduPCSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduPCSClient.h; sourceTree = "<group>"; };
+		E6083E9B1A2B52DE000EF36A /* BaiduPCSErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduPCSErrorCode.h; sourceTree = "<group>"; };
+		E6083E9C1A2B52DE000EF36A /* BaiduPCSStatusListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduPCSStatusListener.h; sourceTree = "<group>"; };
+		E6D83F971A2D58D700E93FE7 /* FWImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWImagePickerViewController.h; sourceTree = "<group>"; };
+		E6D83F981A2D58D700E93FE7 /* FWImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWImagePickerViewController.m; sourceTree = "<group>"; };
+		E6D83F9A1A2DB06500E93FE7 /* FWPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWPhotosViewController.h; sourceTree = "<group>"; };
+		E6D83F9B1A2DB06500E93FE7 /* FWPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWPhotosViewController.m; sourceTree = "<group>"; };
 		E6DE56D51A2864D4004502A6 /* FlyWire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyWire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DE56D91A2864D4004502A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6DE56DA1A2864D4004502A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +73,11 @@
 		E6DE570B1A287A5F004502A6 /* FWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWNavigationController.h; sourceTree = "<group>"; };
 		E6DE570C1A287A5F004502A6 /* FWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWNavigationController.m; sourceTree = "<group>"; };
 		E6DE570F1A288C43004502A6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		E6F0D1E61A2DB4FA00625C12 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E6F0D1E81A2DE44000625C12 /* FWAVCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWAVCaptureViewController.h; sourceTree = "<group>"; };
+		E6F0D1E91A2DE44000625C12 /* FWAVCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWAVCaptureViewController.m; sourceTree = "<group>"; };
+		E6F0D1EB1A2DE8CE00625C12 /* FWCircleCenterClearView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWCircleCenterClearView.h; sourceTree = "<group>"; };
+		E6F0D1EC1A2DE8CE00625C12 /* FWCircleCenterClearView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWCircleCenterClearView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F0D1E71A2DB4FA00625C12 /* AVFoundation.framework in Frameworks */,
 				E6DE570A1A287749004502A6 /* libz.dylib in Frameworks */,
 				E6DE57101A288C43004502A6 /* Crashlytics.framework in Frameworks */,
+				E6083E9D1A2B52DE000EF36A /* baidu_pcs_ios-1.0.a in Frameworks */,
 				C8DF002E876FE6741CCC06B7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,11 +115,56 @@
 		33E9C30D730174982EA21B9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6F0D1E61A2DB4FA00625C12 /* AVFoundation.framework */,
 				E6DE570F1A288C43004502A6 /* Crashlytics.framework */,
 				E6DE57091A287749004502A6 /* libz.dylib */,
 				58D0B3959DCE6434DA319CEA /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6083E941A2B52DE000EF36A /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				E6083E951A2B52DE000EF36A /* baiduYun */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		E6083E951A2B52DE000EF36A /* baiduYun */ = {
+			isa = PBXGroup;
+			children = (
+				E6083E961A2B52DE000EF36A /* baidu_pcs_ios-1.0.a */,
+				E6083E971A2B52DE000EF36A /* include */,
+			);
+			path = baiduYun;
+			sourceTree = "<group>";
+		};
+		E6083E971A2B52DE000EF36A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E6083E981A2B52DE000EF36A /* BaiduOAuth.h */,
+				E6083E991A2B52DE000EF36A /* BaiduPCSActionInfo.h */,
+				E6083E9A1A2B52DE000EF36A /* BaiduPCSClient.h */,
+				E6083E9B1A2B52DE000EF36A /* BaiduPCSErrorCode.h */,
+				E6083E9C1A2B52DE000EF36A /* BaiduPCSStatusListener.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E6D83F961A2D58D700E93FE7 /* takePhotos */ = {
+			isa = PBXGroup;
+			children = (
+				E6D83F971A2D58D700E93FE7 /* FWImagePickerViewController.h */,
+				E6D83F981A2D58D700E93FE7 /* FWImagePickerViewController.m */,
+				E6D83F9A1A2DB06500E93FE7 /* FWPhotosViewController.h */,
+				E6D83F9B1A2DB06500E93FE7 /* FWPhotosViewController.m */,
+				E6F0D1E81A2DE44000625C12 /* FWAVCaptureViewController.h */,
+				E6F0D1E91A2DE44000625C12 /* FWAVCaptureViewController.m */,
+				E6F0D1EB1A2DE8CE00625C12 /* FWCircleCenterClearView.h */,
+				E6F0D1EC1A2DE8CE00625C12 /* FWCircleCenterClearView.m */,
+			);
+			path = takePhotos;
 			sourceTree = "<group>";
 		};
 		E6DE56CC1A2864D4004502A6 = {
@@ -127,6 +195,7 @@
 				E6DE57001A286679004502A6 /* ViewControllers */,
 				E6DE57011A286679004502A6 /* ViewModels */,
 				E6DE57021A286679004502A6 /* Views */,
+				E6083E941A2B52DE000EF36A /* ThirdParty */,
 				E6DE56DC1A2864D4004502A6 /* AppDelegate.h */,
 				E6DE56DD1A2864D4004502A6 /* AppDelegate.m */,
 				E6DE56DF1A2864D4004502A6 /* ViewController.h */,
@@ -184,6 +253,7 @@
 		E6DE57001A286679004502A6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E6D83F961A2D58D700E93FE7 /* takePhotos */,
 				E6DE57061A2876B0004502A6 /* FWViewController.h */,
 				E6DE57071A2876B0004502A6 /* FWViewController.m */,
 				E6DE570B1A287A5F004502A6 /* FWNavigationController.h */,
@@ -356,10 +426,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F0D1ED1A2DE8CE00625C12 /* FWCircleCenterClearView.m in Sources */,
 				E6DE56E11A2864D4004502A6 /* ViewController.m in Sources */,
 				E6DE56DE1A2864D4004502A6 /* AppDelegate.m in Sources */,
 				E6DE57051A286690004502A6 /* FWConstants.m in Sources */,
 				E6DE56DB1A2864D4004502A6 /* main.m in Sources */,
+				E6D83F9C1A2DB06500E93FE7 /* FWPhotosViewController.m in Sources */,
+				E6F0D1EA1A2DE44000625C12 /* FWAVCaptureViewController.m in Sources */,
+				E6D83F991A2D58D700E93FE7 /* FWImagePickerViewController.m in Sources */,
 				E6DE570D1A287A5F004502A6 /* FWNavigationController.m in Sources */,
 				E6DE57081A2876B0004502A6 /* FWViewController.m in Sources */,
 			);
@@ -486,6 +560,7 @@
 			baseConfigurationReference = C0A720BD839B397189160A31 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,8 +569,13 @@
 				INFOPLIST_FILE = FlyWire/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlyWire/ThirdParty/baiduYun",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "116212e4-5a0a-4314-a3b4-23ebfe94e49f";
+				"PROVISIONING_PROFILE[sdk=*]" = "116212e4-5a0a-4314-a3b4-23ebfe94e49f";
 			};
 			name = Debug;
 		};
@@ -504,6 +584,7 @@
 			baseConfigurationReference = 8DC2178AF79021C6F964F747 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -511,8 +592,13 @@
 				INFOPLIST_FILE = FlyWire/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlyWire/ThirdParty/baiduYun",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "116212e4-5a0a-4314-a3b4-23ebfe94e49f";
+				PROVISIONING_PROFILE = "29a02ecf-b169-4df9-b289-34895f03c42e";
+				"PROVISIONING_PROFILE[sdk=*]" = "29a02ecf-b169-4df9-b289-34895f03c42e";
 			};
 			name = Release;
 		};

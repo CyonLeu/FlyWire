@@ -30,6 +30,7 @@
     [MobClick setLogEnabled:YES];
     
     [Crashlytics startWithAPIKey:@"cc7901eb024f843ca3ac13e4cfcfe02665d929fe"];
+    [Crashlytics sharedInstance].debugMode = NO;
     
 //    Class cls = NSClassFromString(@"UMANUtil");
 //    SEL deviceIDSelector = @selector(openUDIDString);
