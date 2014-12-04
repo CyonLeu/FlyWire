@@ -6,7 +6,7 @@ What I do is Custom camera , How to use AVCaptureDevice replace UIImagePickerCon
 
 # Demo :
 
-![screenshot ]()
+![screenshot ](https://raw.githubusercontent.com/CyonLeu/FlyWire/master/screenShot.PNG)
 
 # How to use AVCaptureDevice
 
